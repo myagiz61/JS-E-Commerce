@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: orange;
+  align-items: center;
+  height: 84px;
+}
+
+header input {
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}
+header input:focus {
+  outline: none;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+}
+
+.buttons #backet {
+  background-color: red;
+}
+.buttons #register {
+  background-color: green;
+}
+.buttons #login {
+  background-color: blue;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.category-container {
+  padding: 50px;
+}
+
+.category-container h1 {
+  border-bottom: 3px solid red;
+  width: 185px;
+}
+
+.category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: center;
+}
+
+.category img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.category span {
+  position: absolute;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  bottom: 10px;
+  width: 70%;
+  text-align: center;
+}
+
+.product-container {
+  padding: 50px;
+}
+
+.products {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.product {
+  max-width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.product-item {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.product-item button {
+  background-color: yellow;
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* modal alanı*/
+.modal-container {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.419);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: none;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.modal img {
+  width: 60px;
+  cursor: pointer;
+}
+
+.active {
+  display: grid;
+}
+.modal-list {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.list-item {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.list-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.list-item button {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.total {
+  background-color: rgba(0, 0, 0, 0.859);
+  text-align: center;
+  font-size: 20px;
+}
+
+.total span {
+  color: white;
+  font-weight: 700;
+}
